@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>astor chocolate</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, red, white);
+      color: #333;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h1 {
+      color: #8B0000;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      background: gold;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #333;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, background 0.3s ease;
+      margin-top: 50px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #ffd700;
+    }
+
+    .astor-img {
+      width: 150px;
+      animation: spin 5s linear infinite;
+      margin: 30px 0;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes wave {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    .gold-text {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Halaman 1 -->
+  <section id="halaman1" class="active">
+    <h1>MASUK</h1>
+    <button class="btn" onclick="tampilkan('halaman2')">Login</button>
+  </section>
+
+  <!-- Halaman 2 -->
+  <section id="halaman2">
+    <h1>Menu Astor</h1>
+    <img src="https://png.pngtree.com/png-clipart/20230816/original/pngtree-sweet-cookie-stick-icon-picture-image_7984421.png" alt="Astor" class="astor-img" />
+    <div class="description">
+      <p><strong>Astor</strong> adalah camilan manis berbentuk stik renyah dengan isi krim cokelat lezat di dalamnya. Cocok untuk dinikmati kapan saja!</p>
+      <p>Dengan tekstur yang renyah di luar dan lembut di dalam, Astor memberikan sensasi yang menyenangkan setiap gigitan.</p>
+    </div>
+    <button class="btn" onclick="tampilkan('halaman3')">Lanjut</button>
+  </section>
+
+  <!-- Halaman 3 -->
+  <section id="halaman3">
+    <h1>Deskripsi Lengkap Astor</h1>
+    <div class="description gold-text">
+      <p>
+        Astor adalah kombinasi sempurna antara kerenyahan wafer dan kelembutan krim cokelat yang meleleh di mulut. Diproduksi dengan bahan-bahan pilihan, Astor telah menjadi camilan favorit berbagai kalangan dari anak-anak hingga orang dewasa. Kelezatan Astor tidak hanya hadir di setiap gigitannya, tetapi juga dalam bentuk dan tampilan yang menggoda...
+      </p>
+      <p>
+        Astor bukan hanya sekadar makanan ringan. Ia telah menjadi ikon dalam dunia per-camilan. Kehadirannya mampu menciptakan rasa bahagia, apalagi saat dibagikan bersama orang terdekat. Astor tidak hanya hadir dalam rasa klasik cokelat, tapi juga berevolusi dalam berbagai varian rasa yang menggoda...
+      </p>
+      <p>
+        Di era digital seperti sekarang, Astor juga aktif dalam kampanye media sosial. Banyak pengguna yang membagikan kreasi makanan menggunakan Astor, mulai dari topping es krim, isian kue, hingga campuran minuman. Hal ini menunjukkan fleksibilitas Astor dalam berbagai bentuk sajian...
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 40px;">
+      <button class="btn" onclick="tampilkan('halaman4')">Lanjut</button>
+      <img src="http://www.pngall.com/wp-content/uploads/2016/05/Chocolate-PNG-Clipart.png" alt="Cokelat Bergelombang" style="width: 120px; height: auto; animation: wave 4s ease-in-out infinite;" />
+    </div>
+  </section>
+
+  <!-- Halaman 4 -->
+  <section id="halaman4">
+    <h1>Produk Astor</h1>
+
+    <!-- Gambar Astor dari link -->
+    <div style="margin-bottom: 30px;">
+      <img src="https://www.ktmeurope.co.uk/wp-content/uploads/2018/08/astor40gr-800x800.png" alt="Astor 40gr"
+        style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" />
+    </div>
+
+    <!-- Instagram -->
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+      <a href="https://instagram.com/bayannurohim4" target="_blank" style="text-decoration: none; color: gold; font-weight: bold;">
+        <img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/06/colored-instagram-logo-new.png" alt="Instagram Logo" style="width: 40px; vertical-align: middle; margin-right: 10px;" />
+        @bayannurohim4
+      </a>
+
+      <a href="https://instagram.com/mayoraofficial" target="_blank" style="text-decoration: none; color: gold; font-weight: bold;">
+        <img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/06/colored-instagram-logo-new.png" alt="Instagram Logo" style="width: 40px; vertical-align: middle; margin-right: 10px;" />
+        @mayoraofficial
+      </a>
+    </div>
+  </section>
+
+  <script>
+    function tampilkan(id) {
+      document.querySelectorAll('section').forEach((el) => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
